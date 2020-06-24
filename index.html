@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tema Port Form</title>
+</head>
+<body>
+    <header>
+        <h3>Tema Shipping Port Invoice</h3>
+    </header>
+    <div class="container">
+        <form action="#">
+            <div class="input-group">
+                <div class="input-element">
+                    <input autocomplete="off" placeholder="FROM" type="text" id="id_from" name="name_from">
+                    <p class="error-text"></p>
+                </div>
+                <div class="input-element">
+                    <input autocomplete="off" placeholder="TO" type="text" id="id_to" name="name_to">
+                    <p class="error-text"></p>
+                </div>  
+            </div>
+            <div class="input-group">
+                <div class="input-element">
+                    <input autocomplete="off" placeholder="SOURCE" type="text" id="id_source" name="name_source">
+                    <p class="error-text"></p>
+                </div>
+                <div class="input-element">
+                    <input autocomplete="off" placeholder="DESINATION" type="text" id="id_destination" name="name_destination">
+                    <p class="error-text"></p>
+                </div>  
+            </div>
+            <div class="input-group">
+                <div class="input-element">
+                    <input autocomplete="off" placeholder="WEIGHT" type="text" id="id_weight" name="name_weight">
+                    <p class="error-text"></p>
+                </div>
+                <div class="input-element">
+                    <input autocomplete="off" placeholder="DIMENSIONS" type="text" id="id_dimensions" name="name_dimensions">
+                    <p class="error-text"></p>
+                </div>
+            </div>
+            <div class="input-group">
+                <input autocomplete="off" placeholder="CONTACT" type="text" id="id_contact" name="name_contact"><br/>
+            </div>
+            <p id="contact-error-text" class="error-text"></p>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; Codetopian Community of Fullstack Developers</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

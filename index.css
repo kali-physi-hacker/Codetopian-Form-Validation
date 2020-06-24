@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient: linear-gradient(
+        to right,
+        hsl(6, 100%, 80%),
+        hsl(335, 100%, 65%)
+    );
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+body {
+    color: #222;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: var(--VeryDarkBlue);
+    padding: 2rem 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: var(--VeryDarkBlue);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+header h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: var(--DarkBlue);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
+    border-radius: 8px;
+    border-bottom-right-radius: 200px;
+    padding: 3em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    margin: 0.7rem 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0.6rem 2.7rem 0.6rem 1rem;
+    margin: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: #f1f3f5;
+}
+
+input:focus {
+    background-color: white;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p.error-text {
+    color: #cc0000;
+    margin-left: 1rem;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-error-text {
+    position: relative;
+    left: -3%;
+    top: -10px;
+    margin-bottom: 1rem;
+}
+
+
+button {
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 0.6rem 3.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--VeryDarkBlue);
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+button:hover {
+    box-shadow: 0 0.5rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    transform: scale(1.1);
+}
